@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Khaooo Piyo Ash Karo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+            position: relative;
+            left: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .box3 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .photo {
+            width: 200px;
+            height: 90px;
+
+            background-image: url("photo logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* MAIN BOX */
+
+        .box4 {
+            width: 1270px;
+            height: 400px;
+
+            border-radius: 60px;
+            background-color: #fdf5e8;
+
+            position: relative;
+        }
+
+        .aboutkhaoo {
+            font-size: 20px;
+            font-weight: 100;
+
+            position: absolute;
+            top: 50px;
+            left: 80px;
+        }
+
+        .box5 {
+            font-size: 60px;
+
+            position: absolute;
+            top: 80px;
+            left: 80px;
+
+            white-space: nowrap;
+        }
+
+        .box6 {
+            font-size: 60px;
+            color: #ea5c01;
+
+            position: absolute;
+            top: 150px;
+            left: 80px;
+
+            white-space: nowrap;
+        }
+
+        .box7 {
+            font-size: 23px;
+
+            position: absolute;
+            top: 240px;
+            left: 80px;
+        }
+
+        .box8 {
+            font-size: 23px;
+
+            position: absolute;
+            top: 275px;
+            left: 80px;
+        }
+
+        .button1 {
+            position: relative;
+            top: 343px;
+            right: -84px;
+            font-size: 24px;
+            background-color: #e85c02;
+            width: 125px;
+            height: 45px;
+            border-radius: 28px;
+            transition: 0.3s;
+        }
+
+        .button1:hover {
+            transform: translateY(-10px);
+        }
+
+
+
+        .explore {
+            width: 132px;
+            height: 42px;
+            border-radius: 20px;
+            border: 2px solid #e85c00;
+            position: relative;
+            top: 298px;
+            left: 270px;
+            transition: 0.3s;
+        }
+
+        .echild {
+            position: relative;
+            top: 10px;
+            right: -11px;
+            font-size: 20px;
+            color: #e85c00;
+
+        }
+
+        .explore:hover {
+            transform: translateY(-10px);
+
+        }
+
+
+
+
+
+
+
+        .txt11 {
+            position: relative;
+            top: 8px;
+            right: -9px;
+            color: white;
+        }
+
+        .photo2 {
+
+            height: 400px;
+            width: 672px;
+            background-image: url(burger.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 20px;
+            position: absolute;
+            top: -4px;
+            right: 91px;
+
+        }
+
+        /* HEADING */
+
+        .box9 {
+            font-size: 23px;
+            margin-top: 20px;
+            margin-left: 497px;
+        }
+
+        /* 4 FOOD BOXES */
+
+        .box11 {
+            margin-top: 20px;
+            padding: 20px;
+
+            display: flex;
+
+            /* Equal spacing */
+            justify-content: space-evenly;
+        }
+
+        /* BURGER */
+
+        .box10 {
+            width: 196px;
+            height: 212px;
+
+            border-radius: 20px;
+
+            background-image: url("burger-removebg-preview.png");
+            background-size: 173px 183px;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
+        }
+
+        /* SALAD */
+
+        .box12 {
+            width: 196px;
+            height: 212px;
+
+            border-radius: 20px;
+
+            background-image: url("banan-removebg-preview.png");
+            background-size: 195px 133px;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
+        }
+
+        /* DRINK */
+
+        .box13 {
+            width: 196px;
+            height: 212px;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+
+            background-image: url("minon-removebg-preview.png");
+            background-size: 204px 124px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            transition: 0.3s;
+        }
+
+        /* DESSERT */
+
+        .box14 {
+            width: 196px;
+            height: 212px;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+
+            background-image: url("ice-removebg-preview.png");
+            background-size: 170px 125px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            transition: 0.3s;
+        }
+
+        .box15 {
+            position: relative;
+            top: 11px;
+            right: -80px;
+            font-size: 25px;
+        }
+
+        .box16 {
+            width: 1289px;
+            height: 267px;
+            display: flex;
+            position: relative;
+            top: 20px;
+            right: -11px;
+        }
+
+        /* HOVER */
+
+        .box10:hover,
+        .box12:hover,
+        .box13:hover,
+        .box14:hover {
+            transform: translateY(-10px);
+        }
+
+        /* FOOD TEXT */
+
+        .text1,
+        .text2,
+        .text3,
+        .text4 {
+            font-size: 20px;
+            text-align: center;
+            margin-top: -33px;
+
+            text-shadow: 2px 2px 5px gray;
+        }
+
+        .photo1 {
+            width: 251px;
+            height: 291px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            right: -53px;
+            top: 31px;
+            border-radius: 13px;
+            background-image: url(food\ court.webp);
+            background-size: 268px 153px;
+            background-repeat: no-repeat;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .photo5 {
+            width: 248px;
+            height: 291px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            right: -86px;
+            top: 31px;
+            border-radius: 13px;
+            background-image: url(food\ court.webp);
+            background-size: 268px 153px;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .photo3 {
+            width: 250px;
+            height: 291px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            right: -124px;
+            top: 31px;
+            border-radius: 13px;
+            background-image: url(food\ court.webp);
+            background-size: 268px 153px;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .photo4 {
+            width: 248px;
+            height: 291px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            right: -154px;
+            top: 33px;
+            border-radius: 13px;
+            background-image: url(food\ court.webp);
+            background-size: 268px 153px;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .txt1 {
+            text-align: center;
+            font-size: 18px;
+            margin-top: -95px;
+            margin-right: 54px;
+        }
+
+        .txt2 {
+            text-align: center;
+            font-size: 18px;
+            margin-top: -95px;
+            margin-right: -12px;
+        }
+
+        .txt3 {
+            text-align: center;
+            font-size: 18px;
+            margin-top: -95px;
+            margin-right: -220px;
+        }
+
+        .txt4 {
+            text-align: center;
+            font-size: 18px;
+            position: relative;
+            top: -94px;
+            right: -156px;
+        }
+
+        /* }
+      .child1:hover,
+      .child2:hover,
+      .child3:hover,
+      .child4:hover {
+        transform: translateY(-10px);
+     
+        
+      } */
+        /* .child1{transition: 0.3s;}
+      .child2{transition: 0.3s;}
+      .child3{transition: 0.3s;}
+      .child4{transition: 0.3s;} */
+        .View1:hover,
+        .View2:hover,
+        .View3:hover,
+        .View4:hover {
+            transform: translateY(-10px);
+        }
+
+        .View1 {
+            transition: 0.3s;
+        }
+
+        .View2 {
+            transition: 0.3s;
+        }
+
+        .View3 {
+            transition: 0.3s;
+        }
+
+        .View4 {
+            transition: 0.3s;
+        }
+
+
+        .View1 {
+            position: relative;
+            top: 48px;
+            right: -119px;
+            background-color: #e85c00;
+            width: 119px;
+            height: 39px;
+            border-radius: 20px;
+        }
+
+        .View2 {
+            position: relative;
+            top: 48px;
+            right: -156px;
+            background-color: #e85c00;
+            width: 119px;
+            height: 39px;
+            border-radius: 20px;
+        }
+
+        .View3 {
+            position: relative;
+            top: 48px;
+            right: -191px;
+            background-color: #e85c00;
+            width: 119px;
+            height: 39px;
+            border-radius: 20px;
+        }
+
+        .View4 {
+            position: relative;
+            top: 48px;
+            right: -55px;
+            background-color: #e85c00;
+            width: 119px;
+            height: 39px;
+            border-radius: 20px;
+        }
+
+        .vchild1 {
+            font-size: 20px;
+            position: relative;
+            right: -10px;
+            top: 10px;
+
+            width: 119px;
+            height: 39px;
+        }
+
+        .vchild2 {
+            font-size: 20px;
+            position: relative;
+            right: -10px;
+            top: 10px;
+
+        }
+
+        .vchild3 {
+            font-size: 20px;
+            position: relative;
+            right: -10px;
+            top: 10px;
+
+        }
+
+        .vchild4 {
+            font-size: 20px;
+            position: relative;
+            right: -9px;
+            top: 10px;
+
+
+        }
+
+        .View1 a,
+        .View2 a,
+        .View3 a,
+        .View4 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .photo0 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box17 {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+    <div class="bar">
+        <nav>
+            <div class="photo"></div>
+
+            <ul>
+                <li>Home</li>
+                <li>Food cart</li>
+                <li>about us</li>
+            </ul>
+
+            <div class="box3">
+                Profile
+
+                <div>
+                    <button>cart</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- MAIN HERO BOX -->
+
+    <div class="box4">
+        <div class="aboutkhaoo">Bhook lagi hai ?</div>
+
+        <div class="box5">Khaooo. Piyo.</div>
+
+        <div class="box6">Ash Karo.</div>
+
+        <div class="box7">Your favourite food,</div>
+
+        <div class="box8">delivered to your door.</div>
+
+
+        <div class="photo2"></div>
+
+        <div class="button1">
+            <div class="txt11">Order now</div>
+        </div>
+        <div class="explore">
+            <div class="echild">Explore Food</div>
+        </div>
+    </div>
+
+    <!-- FOOD HEADING -->
+
+    <div class="box9">What are you craving?</div>
+
+    <!-- 4 BOXES -->
+
+    <div class="box11">
+        <div>
+            <div class="box10"></div>
+            <div class="text1">Burger</div>
+        </div>
+
+        <div>
+            <div class="box12"></div>
+            <div class="text2">Salad</div>
+        </div>
+
+        <div>
+            <div class="box13"></div>
+            <div class="text3">Drink</div>
+        </div>
+
+        <div>
+            <div class="box14"></div>
+            <div class="text4">Desert</div>
+        </div>
+    </div>
+
+    <div class="box15">
+
+        <p>Popular Food cort</p>
+    </div>
+    <div class="box16">
+
+        <div class="child1">
+            <div class="photo1"></div>
+
+            <div class="txt1">
+                <p>Near BH1</p>
+            </div>
+            <a href="BH1.html">
+                <div class="View1">
+                    <div class="vchild1">
+                        <p>View Menu</p>
+                    </div>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="child2">
+        <div class="photo5"></div>
+
+        <div class="txt2">
+            <p>Near GYM</p>
+        </div>
+        <a href="GYM.html">
+            <div class="View2">
+                <div class="vchild2">View Menu</div>
+        </a>
+    </div>
+    </div>
+
+
+    <div class="child3">
+        <div class="photo3"></div>
+
+        <div class="txt3">
+            <p>Front computer departement</p>
+        </div>
+        <a href="Near computer.html">
+            <div class="View3">
+                <div class="vchild3">View Menu</div>
+        </a>
+    </div>
+    </div>
+
+
+    <div class="child4">
+        <div class="photo4"></div>
+
+        <div class="txt4">
+            <p>Back-side Computer departement</p>
+            <a href="back cd.html">
+                <div class="View4">
+                    <div class="vchild4">View Menu</div>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="box17">
+        <div class="offer">Offer For</div>
+        <div class="customer">Our First customer</div>
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
